@@ -17,3 +17,6 @@ venv/
 
 # Ignore migrations cache
 migrations/versions/__pycache__/
+.idea/*
+.idea
+
