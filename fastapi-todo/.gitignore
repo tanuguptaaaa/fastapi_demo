@@ -1,0 +1,19 @@
+..myenv/*
+env/
+env/*
+myenv
+myenv/*
+../myenv/
+
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment folder
+myenv/
+env/
+venv/
+
+# Ignore migrations cache
+migrations/versions/__pycache__/
