@@ -1,4 +1,5 @@
 # utils.py
+import random
 from datetime import datetime, timedelta
 
 import jwt
@@ -43,3 +44,7 @@ def generate_refresh_token(id: str) -> str:
     }
     refresh_token = jwt.encode(payload, jwt_secret_key, algorithm=ALGORITHM)
     return refresh_token
+
+# Generate a random OTP
+def generate_otp():
+    return random.randint(100000, 999999)

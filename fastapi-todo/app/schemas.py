@@ -28,6 +28,13 @@ class UserCreate(BaseModel):
     email: EmailStr
     password: str
 
+class UserForgot(BaseModel):
+    email: EmailStr
+
+class UserReset(BaseModel):
+    email: EmailStr
+    otp: str
+    new_password: str
 
 class UserLogin(BaseModel):
     email: EmailStr
